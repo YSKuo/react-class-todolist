@@ -24,7 +24,7 @@ export default class App extends Component {
         this.setState({ localTodos });        
       }
     } catch (e) {
-      // 發生錯誤就啥都不做
+      // 發生錯誤就什麼都不做
     }
   }
 
