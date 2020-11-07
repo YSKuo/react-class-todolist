@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://YSKuo.github.io/react-todolist",
+  "homepage": "https://YSKuo.github.io/react-class-todolist",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "start": "webpack serve --mode development --env development",
@@ -21,7 +21,10 @@
     "css-loader": "^5.0.0",
     "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
     "normalize.css": "^8.0.1",
+    "prettier": "^2.1.2",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
@@ -34,5 +37,15 @@
     "sass": "^1.27.0",
     "sass-loader": "^10.0.4",
     "webpack": "^5.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
   }
 }
