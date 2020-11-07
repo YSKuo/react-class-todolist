@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://YSKuo.github.io/react-class-todolist",
+  "homepage": "https://YSKuo.github.io/react-todolist",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "start": "webpack serve --mode development --env development",
